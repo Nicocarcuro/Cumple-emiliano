@@ -14,15 +14,23 @@
       padding: 20px;
     }
 
-    img {
-      max-width: 100%;
-      width: 600px;
+    .image-link {
+      display: block; /* Make the link a block-level element */
+      max-width: 100%; /* Ensure it doesn't exceed the body width */
+      width: 600px; /* Match the image width */
       border-radius: 10px;
       box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      margin-bottom: 20px; /* Add some space between the image and the text */
+    }
+
+    img {
+      max-width: 100%;
+      width: 100%; /* Make the image fill the link */
+      border-radius: 10px;
+      display: block; /* Remove any extra space below the image */
     }
 
     .texto-links {
-      margin-top: 20px;
       text-align: center;
       font-size: 18px;
     }
@@ -40,12 +48,13 @@
 </head>
 <body>
 
-  <img src="emi_cumple.png" alt="Invitación Emiliano">
+  <a href="https://maps.app.goo.gl/HAkSHJGrMiNXfwhT8" target="_blank" class="image-link">
+    <img src="emi_cumple.png" alt="Invitación Emiliano">
+  </a>
 
   <div class="texto-links">
     <p><strong>📍 Dirección:</strong> <br>
-      La Herradura 22, Colina – 
-      <a href="https://maps.app.goo.gl/HAkSHJGrMiNXfwhT8" target="_blank">MAPA</a>
+      La Herradura 22, Colina
     </p>
 
     <p><strong>📝 Confirmar asistencia:</strong> <br>
